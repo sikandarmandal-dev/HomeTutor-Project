@@ -29,14 +29,6 @@ const userSchema = new mongoose.Schema({
 })
 const User = mongoose.model("User", userSchema);
 
-// const user1 = new User({ name: 'Sikandar', email:"sika@gmail.com", password:"skm1123" });
-// user1.save()
-// .then((res)=>{
-//     console.log(res)
-// }).catch((err)=>{
-//     console.log(err);
-// });
-
 
 //find route
 app.get("/user", async (req, res)=>{
