@@ -24,8 +24,8 @@ router.post("/register", async (req, res) => {
 
     await users.save();
     res.send("done")
-}
-)
+})
+
 //login route
 router.get("/login", (req, res) => {
     res.render("loginForm.ejs")
